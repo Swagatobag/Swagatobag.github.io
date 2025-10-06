@@ -8,8 +8,8 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f0f4f8;
-      color: #333;
+      background-color: #e0f7fa;
+      color: #222;
     }
     header {
       background: linear-gradient(90deg, #005f73, #0a9396);
@@ -19,39 +19,35 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
     }
-    .logo {
+    .logo-img {
       background-color: #94d2bd;
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #005f73;
-      user-select: none;
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 95, 115, 0.15);
+      border: 3px solid #fff;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      flex: 1 1 300px;
+      flex: 1 1 200px;
     }
     header p {
       margin: 0.25rem 0 0;
       font-style: italic;
       font-size: 1.2rem;
-      flex: 1 1 300px;
+      flex: 2 1 300px;
     }
     main {
       max-width: 900px;
       margin: 2rem auto;
-      background-color: white;
+      background-color: #f8fafc;
       padding: 2rem 3rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
       border-radius: 12px;
     }
     section {
@@ -70,11 +66,11 @@
       padding-left: 0;
     }
     ul li {
-      background-color: #e0fbfc;
+      background-color: #caf0f8;
       margin-bottom: 0.8rem;
       padding: 0.7rem 1rem;
       border-radius: 8px;
-      box-shadow: 1px 1px 5px rgba(10, 147, 150, 0.2);
+      box-shadow: 1px 1px 6px rgba(10, 147, 150, 0.11);
       line-height: 1.4;
     }
     footer {
@@ -84,7 +80,7 @@
       padding: 1rem 0;
       border-top: 1px solid #ddd;
       margin-top: 2rem;
-      background-color: #f0f4f8;
+      background-color: #e0f7fa;
     }
     @media (max-width: 600px) {
       main {
@@ -93,26 +89,25 @@
       }
       header {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.9rem;
       }
-      .logo {
-        width: 70px;
-        height: 70px;
-        font-size: 1.5rem;
+      .logo-img {
+        width: 68px;
+        height: 68px;
       }
       header h1, header p {
         flex: auto;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
       section h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo" aria-label="Logo">SB</div>
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/b81be427-8820-4357-9b61-f88ea87c753c.png" alt="Profile Logo" class="logo-img" />
     <h1>Swagato Bag</h1>
     <p>Diploma in Medical Laboratory Technology (DMLT)</p>
     <p>Email: Swagatobag@gmail.com | Phone: 8759003758</p>
