@@ -1,5 +1,3 @@
-# Swagatobag.github.io
-Landing Page For Swagato Bag
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,70 +6,113 @@ Landing Page For Swagato Bag
   <title>Swagato Bag Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      background-color: #f0f4f8;
       color: #333;
     }
     header {
-      background-color: #003366;
+      background: linear-gradient(90deg, #005f73, #0a9396);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      background-color: #94d2bd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #005f73;
+      user-select: none;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      flex: 1 1 300px;
     }
     header p {
-      margin: 0.5rem 0 0;
+      margin: 0.25rem 0 0;
       font-style: italic;
       font-size: 1.2rem;
+      flex: 1 1 300px;
     }
     main {
       max-width: 900px;
       margin: 2rem auto;
       background-color: white;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     section h2 {
-      border-bottom: 2px solid #003366;
+      border-bottom: 3px solid #0a9396;
       padding-bottom: 0.5rem;
-      color: #003366;
+      color: #0a9396;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
     ul {
       list-style-type: none;
-      padding: 0;
+      padding-left: 0;
     }
     ul li {
-      margin-bottom: 0.5rem;
-    }
-    .skills ul {
-      padding-left: 1rem;
+      background-color: #e0fbfc;
+      margin-bottom: 0.8rem;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px rgba(10, 147, 150, 0.2);
+      line-height: 1.4;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
       padding: 1rem 0;
       border-top: 1px solid #ddd;
       margin-top: 2rem;
+      background-color: #f0f4f8;
     }
     @media (max-width: 600px) {
       main {
         margin: 1rem;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
+      }
+      header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .logo {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+      }
+      header h1, header p {
+        flex: auto;
+        font-size: 1.8rem;
+      }
+      section h2 {
+        font-size: 1.4rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo" aria-label="Logo">SB</div>
     <h1>Swagato Bag</h1>
     <p>Diploma in Medical Laboratory Technology (DMLT)</p>
     <p>Email: Swagatobag@gmail.com | Phone: 8759003758</p>
