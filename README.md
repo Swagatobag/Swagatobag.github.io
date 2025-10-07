@@ -127,13 +127,14 @@
       position: relative;
       overflow: hidden;
     }
+    /* FIX: Remove typewriter animation for summary, always show full text */
     .typing-highlight {
-      display: inline-block; border-right: 3px solid #00796b;
-      white-space: nowrap; overflow: hidden;
-      animation: typing 3s steps(40, end) forwards, blink 1s infinite step-end alternate;
-      max-width: 100%;
+      display: inline;
+      border-right: 3px solid #00796b;
+      animation: blink 1s infinite step-end alternate;
+      white-space: normal;
+      overflow: visible;
     }
-    @keyframes typing { from { width: 0 } to { width: 100% } }
     @keyframes blink { 50% { border-color: transparent } 100% { border-color: #00796b } }
 
     /* Tablet (≤1024px) */
@@ -192,7 +193,7 @@
       <h2>Professional Summary</h2>
       <p>
         <span class="typing-highlight">
-          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic techniques and laboratory instruments, with a strong commitment to accuracy and patient care.
+          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic techniques and laboratory instruments, with a strong commitment to accuracy and patient care. Experienced in maintaining laboratory safety standards, performing routine and advanced testing, and supporting healthcare teams with reliable results.
         </span>
       </p>
     </section>
