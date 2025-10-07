@@ -243,7 +243,7 @@
   <main>
     <section class="about">
       <h2>Professional Summary</h2>
-      <p>Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic instruments and committed to maintaining accuracy and safety standards. Seeking to contribute technical and interpersonal skills in a challenging healthcare environment.</p>
+      <p>Dedicated and detail oriented Medical Laboratory Technology diploma holder with hands on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic instruments and committed to maintaining accuracy and safety standards. Seeking to contribute technical and interpersonal skills in a challenging healthcare environment.</p>
     </section>
     <section class="education">
       <h2>Education</h2>
