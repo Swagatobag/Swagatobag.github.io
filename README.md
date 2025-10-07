@@ -14,8 +14,8 @@
       background: linear-gradient(135deg, #e0f7fa, #c0f0f6);
       color: #0a293d;
       overflow-x: hidden;
-      cursor: none;
       min-height: 100vh;
+      cursor: none;
     }
     a { color: #00796b; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -192,7 +192,7 @@
       <h2>Professional Summary</h2>
       <p>
         <span class="typing-highlight">
-          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various di[...]
+          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic techniques and laboratory instruments, with a strong commitment to accuracy and patient care.
         </span>
       </p>
     </section>
