@@ -126,7 +126,7 @@
     <section class="training">
       <h2>Training & Internship</h2>
       <ul>
-        <li>Internship at BMRC Hospital Ltd.<br/>- Hands-on exposure to routine laboratory tests and instrumentation.<br/>- Assisted in hematology, biochemistry, microbiology analyses.</li>
+        <li>Internship at BMRC Hospital Ltd.<br/>- Hands on exposure to routine laboratory tests and instrumentation.<br/>- Assisted in Hematology, Biochemistry, Microbiology analyses.</li>
       </ul>
     </section>
     <section class="experience">
