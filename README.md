@@ -6,11 +6,7 @@
   <title>Swagato Bag Portfolio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-    /* Reset and base */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -19,15 +15,8 @@
       overflow-x: hidden;
       cursor: none;
     }
-    a {
-      color: #00796b;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Custom cursor */
+    a { color: #00796b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .custom-cursor {
       position: fixed;
       top: 0;
@@ -38,19 +27,16 @@
       border-radius: 50%;
       pointer-events: none;
       transform: translate(-50%, -50%);
-      transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
       z-index: 9999;
       mix-blend-mode: difference;
     }
-    a:hover ~ .custom-cursor,
-    button:hover ~ .custom-cursor {
+    a:hover ~ .custom-cursor, button:hover ~ .custom-cursor {
       width: 40px;
       height: 40px;
       background-color: #00796b33;
       border-color: #004d40;
     }
-
-    /* Header */
     header {
       background: linear-gradient(90deg, #00796b, #009688);
       color: white;
@@ -65,7 +51,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
     }
     header.scrolled {
       background: #004d40;
@@ -77,10 +63,10 @@
       width: 90px;
       height: 90px;
       object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 121, 107, 0.3);
-      border: 3px solid #ffffffcc;
+      box-shadow: 0 4px 12px rgba(0,121,107,0.3);
+      border: 3px solid #fff;
       flex-shrink: 0;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s;
     }
     header h1 {
       margin: 0;
@@ -97,15 +83,8 @@
       flex: 2 1 320px;
       user-select: text;
     }
-    header p a {
-      color: #b2dfdb;
-      font-weight: 600;
-    }
-    header p a:hover {
-      color: #80cbc4;
-    }
-
-    /* Main container */
+    header p a { color: #b2dfdb; font-weight: 600; }
+    header p a:hover { color: #80cbc4; }
     main {
       max-width: 960px;
       margin: 3rem auto 4rem;
@@ -137,19 +116,16 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+    ul { list-style-type: none; padding-left: 0; }
     ul li {
       background-color: #b2dfdb;
       margin-bottom: 1rem;
       padding: 1rem 1.3rem;
       border-radius: 12px;
-      box-shadow: 2px 2px 12px rgba(0, 121, 107, 0.15);
+      box-shadow: 2px 2px 12px rgba(0,121,107,0.15);
       font-weight: 500;
       color: #004d40;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
       cursor: default;
     }
     ul li:hover {
@@ -157,8 +133,6 @@
       color: #00251a;
       box-shadow: 0 6px 16px rgba(0, 77, 64, 0.3);
     }
-
-    /* Professional summary special */
     .about p {
       font-size: 1.15rem;
       font-weight: 400;
@@ -184,8 +158,6 @@
       50% { border-color: transparent }
       100% { border-color: #00796b }
     }
-
-    /* Responsive */
     @media (max-width: 700px) {
       header {
         flex-direction: column;
@@ -200,23 +172,14 @@
         font-size: 1.9rem;
         text-align: center;
       }
-      header p {
-        font-size: 1rem;
-        text-align: center;
-      }
+      header p { font-size: 1rem; text-align: center; }
       main {
         padding: 2rem 1.5rem;
         margin: 2.5rem 1rem 3rem;
       }
-      section h2 {
-        font-size: 1.6rem;
-      }
-      ul li {
-        font-size: 0.9rem;
-      }
+      section h2 { font-size: 1.6rem; }
+      ul li { font-size: 0.9rem; }
     }
-
-    /* Footer */
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -227,30 +190,12 @@
       font-weight: 500;
       user-select: none;
     }
-
-    /* Images in sections for visual appeal */
-    .image-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1.8rem;
-    }
-    .image-wrapper img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 1rem;
-      box-shadow: 0 8px 20px rgba(0, 121, 107, 0.15);
-      transition: transform 0.5s ease;
-      cursor: pointer;
-    }
-    .image-wrapper img:hover {
-      transform: scale(1.05) rotate(1deg);
-    }
   </style>
 </head>
 <body>
-
   <header id="pageHeader">
-    <img src="https://images.unsplash.com/photo-1581093588401-6c84a57b5fab?auto=format&fit=crop&w=80&q=80" alt="Profile Logo" class="logo-img" />
+    <!-- Use your uploaded logo file name here; if it's in the same folder as your HTML use just the filename. -->
+    <img src="WhatsApp Image 2025-10-07 at 19.07.35_642ae5d8.jpg" alt="Profile Logo" class="logo-img" />
     <h1>Swagato Bag</h1>
     <p>Diploma in Medical Laboratory Technology (DMLT)</p>
     <p>Email: <a href="mailto:Swagatobag@gmail.com">Swagatobag@gmail.com</a> | Phone: 8759003758</p>
@@ -259,10 +204,11 @@
   <main>
     <section class="about">
       <h2>Professional Summary</h2>
-      <p><span class="typing-highlight">Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic instruments and committed to maintaining accuracy and safety standards. Seeking to contribute technical and interpersonal skills in a challenging healthcare environment.</span></p>
-      <div class="image-wrapper">
-        <img src="https://images.unsplash.com/photo-1581092160610-4504beebb57f?auto=format&fit=crop&w=600&q=80" alt="Medical lab technician at work" loading="lazy" />
-      </div>
+      <p>
+        <span class="typing-highlight">
+          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic instruments and committed to maintaining accuracy and safety standards. Seeking to contribute technical and interpersonal skills in a challenging healthcare environment.
+        </span>
+      </p>
     </section>
 
     <section class="education">
@@ -270,9 +216,6 @@
       <ul>
         <li><strong>Diploma in Medical Laboratory Technology (DMLT)</strong><br/>BMRC Hospital Ltd., West Bengal State Medical Faculty, 2023<br/>- First Year: 64.5%<br/>- Second Year: 66.66%</li>
       </ul>
-      <div class="image-wrapper">
-        <img src="https://images.unsplash.com/photo-1576765607927-030e9c2a1fdd?auto=format&fit=crop&w=600&q=80" alt="Graduate certificate diploma" loading="lazy" />
-      </div>
     </section>
 
     <section class="training">
@@ -280,9 +223,6 @@
       <ul>
         <li>Internship at BMRC Hospital Ltd.<br/>- Hands on exposure to routine laboratory tests and instrumentation.<br/>- Assisted in Hematology, Biochemistry, Microbiology analyses.</li>
       </ul>
-      <div class="image-wrapper">
-        <img src="https://images.unsplash.com/photo-1579154203451-76478e2b53c0?auto=format&fit=crop&w=600&q=80" alt="Lab internship" loading="lazy" />
-      </div>
     </section>
 
     <section class="experience">
@@ -294,9 +234,6 @@
           - Maintained laboratory safety protocols and assisted in routine maintenance.
         </li>
       </ul>
-      <div class="image-wrapper">
-        <img src="https://images.unsplash.com/photo-1581093889799-465d4a3a2ef3?auto=format&fit=crop&w=600&q=80" alt="Lab instruments and technician" loading="lazy" />
-      </div>
     </section>
 
     <section class="skills">
@@ -331,7 +268,6 @@
     function revealSections() {
       const sections = document.querySelectorAll('section');
       const triggerBottom = window.innerHeight * 0.85;
-
       sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
         if(sectionTop < triggerBottom){
@@ -342,8 +278,6 @@
     window.addEventListener('scroll', revealSections);
     window.addEventListener('load', () => {
       revealSections();
-
-      // Header scroll effect
       const header = document.getElementById('pageHeader');
       window.addEventListener('scroll', () => {
         if(window.scrollY > 50){
@@ -359,7 +293,6 @@
     let mouseX = 0, mouseY = 0;
     let posX = 0, posY = 0;
     const speed = 0.15;
-
     function animateCursor() {
       posX += (mouseX - posX) * speed;
       posY += (mouseY - posY) * speed;
@@ -367,12 +300,10 @@
       requestAnimationFrame(animateCursor);
     }
     animateCursor();
-
     window.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
     });
   </script>
-
 </body>
 </html>
