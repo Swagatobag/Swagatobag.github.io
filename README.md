@@ -132,8 +132,8 @@
     <section class="experience">
       <h2>Work Experience</h2>
       <ul>
-        <li><strong>Laboratory Assistant (Internship)</strong> at BMRC Hospital Ltd.<br/>
-        - Operated Erba XL 600 Hematology Analyzer, URIT 3300 Biochemistry Analyzer, and other lab equipment.<br/>
+        <li><strong>Laboratory Technician </strong> at APOLLO CLINIC BARASAT .<br/>
+        - Operated Erba H360 Hematology Analyzer,  Erba EM200 Biochemistry Analyzer,Maglumi 800 and other lab equipment.<br/>
         - Performed sample collection, processing, and data entry accurately.<br/>
         - Maintained laboratory safety protocols and assisted in routine maintenance.</li>
       </ul>
@@ -141,7 +141,7 @@
     <section class="skills">
       <h2>Technical Skills</h2>
       <ul>
-        <li>Laboratory Instruments: Erba XL 600 Hematology Analyzer, URIT 3300 Biochemistry Analyzer, and other clinical analyzers.</li>
+        <li>Laboratory Instruments: Erba H360 Hematology Analyzer, Erba EM200 Biochemistry Analyzer(FULL AUTO), and other clinical analyzers.</li>
         <li>Diagnostic Techniques: Hematology, Biochemistry, Microbiology testing.</li>
         <li>Sample collection, processing, and accurate data entry.</li>
         <li>Maintained laboratory safety protocols and assisted in routine maintenance.</li>
