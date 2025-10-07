@@ -104,7 +104,7 @@
 </head>
 <body>
   <header id="pageHeader">
-    <img src="assets/WhatsApp-Image-2025-10-07-at-19.07.35_642ae5d8.jpg" alt="Profile Logo" class="logo-img" />
+    <img src="https://raw.githubusercontent.com/Swagatobag/Swagatobag.github.io/main/assets/logo.jpg" alt="Profile Logo" class="logo-img" />
     <h1>Swagato Bag</h1>
     <p>Diploma in Medical Laboratory Technology (DMLT)</p>
     <p>Email: <a href="mailto:Swagatobag@gmail.com">Swagatobag@gmail.com</a> | Phone: 8759003758</p>
