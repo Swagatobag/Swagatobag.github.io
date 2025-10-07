@@ -6,19 +6,17 @@
   <title>Swagato Bag Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    /* Root colors and fonts */
     :root {
-      --primary-gradient: linear-gradient(135deg, #7f00ff 0%, #e100ff 100%);
-      --secondary-gradient: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
-      --accent-color: #ff4d6d;
-      --text-dark: #222222;
-      --text-light: #fafafa;
-      --bg-light: #fefefe;
-      --shadow-light: rgba(0, 0, 0, 0.1);
-      --shadow-hover: rgba(255, 77, 109, 0.3);
+      --primary-gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+      --secondary-gradient: linear-gradient(135deg, #64b6ac 0%, #8dc6bf 100%);
+      --accent-color: #2a9d8f;
+      --text-dark: #1b4332;
+      --text-light: #f0f8f7;
+      --bg-light: #f9faf9;
+      --shadow-light: rgba(42, 157, 143, 0.15);
+      --shadow-hover: rgba(42, 157, 143, 0.3);
     }
 
-    /* Global reset */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -43,13 +41,10 @@
       font-weight: 600;
       transition: color 0.3s ease;
     }
-
-    a:hover,
-    a:focus {
+    a:hover, a:focus {
       color: var(--text-light);
     }
 
-    /* Header styles */
     header {
       background: var(--secondary-gradient);
       color: var(--text-light);
@@ -68,27 +63,24 @@
       top: 1rem;
       z-index: 10;
     }
-
     .logo-img {
-      background-color: #a884ee;
+      background-color: #7ad1cd;
       border-radius: 50%;
       width: 96px;
       height: 96px;
       object-fit: cover;
-      box-shadow: 0 3px 12px rgba(128, 0, 255, 0.4);
+      box-shadow: 0 3px 12px rgba(42, 157, 143, 0.4);
       border: 4px solid var(--text-light);
       flex-shrink: 0;
       animation: bounceIn 1.2s ease forwards;
     }
-
     header h1 {
       font-size: 2.8rem;
       font-weight: 700;
       flex: 1 1 280px;
-      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
       animation: fadeInUp 1.3s 0.2s ease forwards;
     }
-
     header p {
       font-style: italic;
       font-size: 1.3rem;
@@ -99,7 +91,6 @@
       gap: 0.2rem;
       animation: fadeInUp 1.3s 0.3s ease forwards;
     }
-
     header p a {
       display: inline-block;
       font-size: 1.05rem;
@@ -108,7 +99,6 @@
       animation: pulse 2.5s infinite;
     }
 
-    /* Main content container */
     main {
       width: 100%;
       max-width: 900px;
@@ -119,12 +109,9 @@
       box-shadow: 0 10px 30px var(--shadow-light);
       animation: fadeInUp 1.5s 0.5s ease forwards;
     }
-
-    /* Section styling */
     section {
       margin-bottom: 3rem;
     }
-
     section h2 {
       font-weight: 700;
       font-size: 2rem;
@@ -136,7 +123,6 @@
       overflow: hidden;
       animation: underlineGrow 1.2s ease forwards;
     }
-
     ul {
       list-style: none;
       padding-left: 0;
@@ -144,29 +130,24 @@
       flex-direction: column;
       gap: 1rem;
     }
-
     ul li {
-      background: #e4eafc;
+      background: #dceddc;
       border-radius: 12px;
       padding: 1rem 1.4rem;
-      box-shadow: 3px 4px 12px rgba(0, 0, 255, 0.1);
+      box-shadow: 3px 4px 12px rgba(42, 157, 143, 0.1);
       font-size: 1.1rem;
       line-height: 1.5;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: default;
     }
-
     ul li:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 25px var(--shadow-hover);
-      background: #fff0f3;
+      background: #e7f5f3;
     }
-
     strong {
-      color: var(--primary-gradient);
+      color: var(--accent-color);
     }
-
-    /* Footer styles */
     footer {
       margin-top: auto;
       width: 100%;
@@ -174,27 +155,23 @@
       text-align: center;
       padding: 1rem 0 2rem;
       font-size: 0.9rem;
-      color: #444;
+      color: var(--text-dark);
       letter-spacing: 0.02em;
       user-select: none;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #ccc;
       background: transparent;
       animation: fadeInUp 1.8s 0.7s ease forwards;
     }
-
     footer a {
       font-weight: 600;
       color: var(--accent-color);
       animation: pulse 3s infinite;
     }
-
-    /* Responsive adjustments */
     @media (max-width: 900px) {
       main {
         padding: 1.5rem 2rem;
       }
     }
-
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -202,63 +179,52 @@
         gap: 1rem;
         border-radius: 20px;
       }
-
       .logo-img {
         width: 80px;
         height: 80px;
-        box-shadow: 0 2px 10px rgba(128, 0, 255, 0.3);
+        box-shadow: 0 2px 10px rgba(42, 157, 143, 0.3);
       }
-
       header h1 {
         font-size: 1.9rem;
         text-align: center;
         flex: none;
       }
-
       header p {
         font-size: 1rem;
         text-align: center;
         flex: none;
       }
-
       main {
         margin-top: 1.5rem;
         padding: 1.5rem 1.5rem;
         border-radius: 20px;
       }
-
       section h2 {
         font-size: 1.5rem;
         border-bottom-width: 3px;
       }
-
       ul li {
         font-size: 1rem;
       }
     }
 
-    /* Animations */
     @keyframes slideFadeIn {
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(12px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes bounceIn {
       0% { opacity: 0; transform: scale(0.6) translateY(-40px);}
       60% { opacity: 1; transform: scale(1.05) translateY(10px);}
       100% { transform: scale(1) translateY(0);}
     }
-
     @keyframes underlineGrow {
       0% { width: 0; }
       100% { width: 100%; }
     }
-
     @keyframes pulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.6; }
