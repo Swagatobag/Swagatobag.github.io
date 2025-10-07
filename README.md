@@ -7,6 +7,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
     *, *::before, *::after { box-sizing: border-box; }
+    html { font-size: 16px; }
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -14,6 +15,7 @@
       color: #0a293d;
       overflow-x: hidden;
       cursor: none;
+      min-height: 100vh;
     }
     a { color: #00796b; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -35,48 +37,95 @@
       flex-wrap: wrap; box-shadow: 0 4px 12px rgb(0 121 107 / 0.3);
       position: sticky; top: 0; z-index: 1000;
       transition: background-color 0.3s;
+      flex-direction: row;
     }
     header.scrolled {
       background: #004d40; box-shadow: 0 2px 8px rgb(0 77 64 / 0.5);
     }
     .logo-img {
-      background-color: #a7ffeb; border-radius: 50%; width: 90px; height: 90px;
-      object-fit: cover; box-shadow: 0 4px 12px rgba(0,121,107,0.3);
+      background-color: #a7ffeb;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,121,107,0.3);
       border: 3px solid #fff; flex-shrink: 0;
       transition: transform 0.3s;
+      max-width: 22vw;
+      max-height: 22vw;
+      min-width: 60px;
+      min-height: 60px;
     }
-    header h1 { margin: 0; font-size: 2.75rem; flex: 1 1 200px; font-weight: 700;
-      letter-spacing: 1px; text-shadow: 0 1px 3px rgba(0,0,0,0.15);}
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      flex: 1 1 200px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      word-break: break-word;
+    }
     header p {
-      margin: 0.25rem 0 0; font-style: italic; font-size: 1.2rem; flex: 2 1 320px; user-select: text;
+      margin: 0.25rem 0 0;
+      font-style: italic;
+      font-size: 1.1rem;
+      flex: 2 1 320px;
+      user-select: text;
+      word-break: break-word;
     }
     header p a { color: #b2dfdb; font-weight: 600; }
     header p a:hover { color: #80cbc4; }
+
     main {
-      max-width: 960px; margin: 3rem auto 4rem; background-color: #ffffffcc;
-      backdrop-filter: saturate(180%) blur(15px); padding: 3rem 3rem 4rem;
-      box-shadow: 0 8px 24px rgb(0 0 0 / 0.1); border-radius: 20px; overflow: hidden;
+      max-width: 960px;
+      margin: 3rem auto 4rem auto;
+      background-color: #ffffffcc;
+      backdrop-filter: saturate(180%) blur(15px);
+      padding: 3rem 3rem 4rem 3rem;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+      border-radius: 20px;
+      overflow: hidden;
     }
     section {
-      margin-bottom: 3.5rem; opacity: 0; transform: translateY(30px);
-      animation-fill-mode: forwards; animation-timing-function: ease-out;
+      margin-bottom: 3.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
     }
     section.visible { opacity: 1; transform: translateY(0); }
     section h2 {
-      border-bottom: 4px solid #00796b; padding-bottom: 0.7rem;
-      color: #00796b; font-weight: 700; font-size: 2rem;
-      margin-bottom: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase;
+      border-bottom: 4px solid #00796b;
+      padding-bottom: 0.7rem;
+      color: #00796b;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
     }
     ul { list-style-type: none; padding-left: 0; }
     ul li {
-      background-color: #b2dfdb; margin-bottom: 1rem; padding: 1rem 1.3rem;
-      border-radius: 12px; box-shadow: 2px 2px 12px rgba(0,121,107,0.15);
-      font-weight: 500; color: #004d40; transition: background-color 0.3s; cursor: default;
+      background-color: #b2dfdb;
+      margin-bottom: 1rem;
+      padding: 1rem 1.3rem;
+      border-radius: 12px;
+      box-shadow: 2px 2px 12px rgba(0,121,107,0.15);
+      font-weight: 500;
+      color: #004d40;
+      transition: background-color 0.3s;
+      cursor: default;
+      word-break: break-word;
     }
     ul li:hover { background-color: #80cbc4; color: #00251a; box-shadow: 0 6px 16px rgba(0, 77, 64, 0.3);}
     .about p {
-      font-size: 1.15rem; font-weight: 400; line-height: 1.6; max-width: 700px; margin: 0 auto;
-      position: relative; overflow: hidden;
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
     }
     .typing-highlight {
       display: inline-block; border-right: 3px solid #00796b;
@@ -86,17 +135,45 @@
     }
     @keyframes typing { from { width: 0 } to { width: 100% } }
     @keyframes blink { 50% { border-color: transparent } 100% { border-color: #00796b } }
+
+    /* Tablet (≤1024px) */
+    @media (max-width: 1024px) {
+      main {
+        padding: 2rem 1.5rem 2.5rem 1.5rem;
+        margin: 2.5rem 1rem 3rem 1rem;
+      }
+      header h1 { font-size: 2rem; }
+      .logo-img { width: 70px; height: 70px; max-width: 18vw; max-height: 18vw;}
+    }
+    /* Mobile (≤700px) */
     @media (max-width: 700px) {
-      header { flex-direction: column; gap: 0.8rem; padding: 1.75rem 1rem;}
-      .logo-img { width: 76px; height: 76px;}
-      header h1 { font-size: 1.9rem; text-align: center; }
-      header p { font-size: 1rem; text-align: center; }
-      main { padding: 2rem 1.5rem; margin: 2.5rem 1rem 3rem; }
-      section h2 { font-size: 1.6rem;}
-      ul li { font-size: 0.9rem;}
+      header {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1.3rem 0.6rem 1.3rem 0.6rem;
+        min-width: 0;
+      }
+      .logo-img { width: 55px; height: 55px; max-width: 30vw; max-height: 30vw;}
+      header h1 { font-size: 1.25rem; text-align: center; }
+      header p { font-size: 0.97rem; text-align: center; }
+      main {
+        padding: 1.1rem 0.4rem 1.7rem 0.4rem;
+        margin: 1.2rem 0.3rem 2rem 0.3rem;
+        border-radius: 10px;
+      }
+      section h2 { font-size: 1.14rem;}
+      ul li { font-size: 0.89rem;}
+      .about p { font-size: 0.98rem; }
+    }
+    /* Extra small mobile (≤420px) */
+    @media (max-width: 420px) {
+      header h1 { font-size: 1.07rem; }
+      .logo-img { width: 40px; height: 40px; }
+      section h2 { font-size: 1rem; }
+      main { padding: 0.5rem 0.1rem 1rem 0.1rem;}
     }
     footer {
-      text-align: center; font-size: 0.9rem; color: #004d40aa;
+      text-align: center; font-size: 0.87rem; color: #004d40aa;
       padding: 1rem 1rem 2rem; border-top: 1px solid #00796b33;
       background: transparent; font-weight: 500; user-select: none;
     }
@@ -104,7 +181,7 @@
 </head>
 <body>
   <header id="pageHeader">
-    <img src="https://raw.githubusercontent.com/Swagatobag/Swagatobag.github.io/main/assets/logo.jpg" alt="Profile Logo" class="logo-img" />
+    <img src="assets/logo.jpg" alt="Profile Logo" class="logo-img" />
     <h1>Swagato Bag</h1>
     <p>Diploma in Medical Laboratory Technology (DMLT)</p>
     <p>Email: <a href="mailto:Swagatobag@gmail.com">Swagatobag@gmail.com</a> | Phone: 8759003758</p>
@@ -115,7 +192,7 @@
       <h2>Professional Summary</h2>
       <p>
         <span class="typing-highlight">
-          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various diagnostic instruments and committed to maintaining accuracy and safety standards. Seeking to contribute technical and interpersonal skills in a challenging healthcare environment.
+          Dedicated and detail-oriented Medical Laboratory Technology diploma holder with hands-on experience in clinical laboratory procedures, diagnostics, and quality control. Skilled in various di[...]
         </span>
       </p>
     </section>
